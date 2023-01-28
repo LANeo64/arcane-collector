@@ -1,0 +1,20 @@
+<!-- templates/registration/login.html -->
+{% extends 'base.html' %}
+
+{% block title %}Login page | {% endblock title %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+{{user.username}}
+{% comment "redirect" %}<meta http-equiv="REFRESH" content="0;url=http://redirect-url">{% endcomment %}
+{% else %}
+	<h2>Log In</h2>
+	<form method="post">
+	{% csrf_token %}
+	{{ form.as_p }}
+	<button type="submit">Log In</button>
+	</form>
+{% endif %}
+
+{% endblock content %}

@@ -1,0 +1,11 @@
+<!-- templates/collection/collection.html -->
+{% extends 'collection/base' %}
+
+{% block title %}Detail - {% endblock title %}Collection
+{% block content %}
+    {% if example %}
+        <p>blokovy {{ example }}</p>
+    {% else %}
+        <p>My second paragraph.</p>
+    {% endif %}
+{% endblock content %}
