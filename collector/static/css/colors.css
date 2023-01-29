@@ -4,6 +4,34 @@
  */
 
 
-/*body {
-    background-color: #624f42;
-}*/
+:root{
+    --ac-primary:#567189;
+    --ac-secondary:#7B8FA1;
+    --ac-tertiary:#CFB997;
+    --ac-quaternary:#FAD6A5;
+    --ac-pri-light:#bbc6d0;
+    --ac-pri-dark:#222d37;
+    --ac-sec-light:#cad2d9;
+    --ac-sec-dark:#313940;
+    --ac-ter-light:#ece3d5;
+    --ac-ter-dark:#534a3c;
+    --ac-qua-light:#fdefdb;
+    --ac-qua-dark:#645642;
+    --ac-primary-rgb:86,113,137;
+    --ac-secondary-rgb:123,143,161;
+    --ac-tertiary-rgb:207,185,151;
+    --ac-quaternary-rgb:250,214,165;
+    --ac-pri-light-rgb:187,198,208;
+    --ac-pri-dark-rgb:34,45,55;
+    --ac-sec-light-rgb:202,210,217;
+    --ac-sec-dark-rgb:49,57,64;
+    --ac-ter-light-rgb:236,227,213;
+    --ac-ter-dark-rgb:83,74,60;
+    --ac-qua-light-rgb:253,239,219;
+    --ac-qua-dark-rgb:100,86,66;
+}
+
+.ac-bg-primary {
+    --ac-bg-opacity:1;
+    background-color:rgba(var(--ac-tertiary-rgb),var(--ac-bg-opacity))!important
+}
