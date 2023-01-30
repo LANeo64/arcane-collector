@@ -19,13 +19,13 @@
         <link rel="stylesheet" href="{% static 'css/colors.css' %}">
         <title>{% block title %}Page Title | {% endblock title %}Arcane Collector</title>
     </head>
-<body>
-    <header class="text-white">
+<body class="ac-bg-primary-dark ac-text-tertiary">
+    <header>
         {% include 'header.html' %}
     </header>
     
     <main class="d-flex flex-row">
-        <nav class="bg-secondary">
+        <nav class="ac-bg-secondary">
             {% block app_nav %}
             {% endblock app_nav %}
         </nav>
@@ -35,7 +35,7 @@
             {% endblock content %}
         </div>
     </main>
-    <footer class="p-3 bg-dark text-white">
+    <footer class="p-3 ac-bg-secondary-dark ac-text-quaternary-dark">
         {% include 'footer.html' %}
     </footer>
 <!--<script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>-->

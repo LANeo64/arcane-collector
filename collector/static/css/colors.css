@@ -3,7 +3,6 @@
  * https://maketintsandshades.com/#567189,7B8FA1,CFB997,FAD6A5
  */
 
-
 :root{
     --ac-primary:#567189;
     --ac-secondary:#7B8FA1;
@@ -29,9 +28,132 @@
     --ac-ter-dark-rgb:83,74,60;
     --ac-qua-light-rgb:253,239,219;
     --ac-qua-dark-rgb:100,86,66;
+    
 }
 
 .ac-bg-primary {
     --ac-bg-opacity:1;
+    background-color:rgba(var(--ac-primary-rgb),var(--ac-bg-opacity))!important
+}
+
+.ac-bg-secondary {
+    --ac-bg-opacity:1;
+    background-color:rgba(var(--ac-secondary-rgb),var(--ac-bg-opacity))!important
+}
+
+.ac-bg-tertiary {
+    --ac-bg-opacity:1;
     background-color:rgba(var(--ac-tertiary-rgb),var(--ac-bg-opacity))!important
 }
+
+.ac-bg-quaternary {
+    --ac-bg-opacity:1;
+    background-color:rgba(var(--ac-quaternary-rgb),var(--ac-bg-opacity))!important
+}
+
+.ac-bg-primary-light {
+    --ac-bg-opacity:1;
+    background-color:rgba(var(--ac-pri-light-rgb),var(--ac-bg-opacity))!important
+}
+
+.ac-bg-primary-dark {
+    --ac-bg-opacity:1;
+    background-color:rgba(var(--ac-pri-dark-rgb),var(--ac-bg-opacity))!important
+}
+
+.ac-bg-secondary-light {
+    --ac-bg-opacity:1;
+    background-color:rgba(var(--ac-sec-light-rgb),var(--ac-bg-opacity))!important
+}
+
+.ac-bg-secondary-dark {
+    --ac-bg-opacity:1;
+    background-color:rgba(var(--ac-sec-dark-rgb),var(--ac-bg-opacity))!important
+}
+
+.ac-bg-tertiary-light {
+    --ac-bg-opacity:1;
+    background-color:rgba(var(--ac-ter-light-rgb),var(--ac-bg-opacity))!important
+}
+
+.ac-bg-tertiary-dark {
+    --ac-bg-opacity:1;
+    background-color:rgba(var(--ac-ter-dark-rgb),var(--ac-bg-opacity))!important
+}
+
+.ac-bg-quaternary-light {
+    --ac-bg-opacity:1;
+    background-color:rgba(var(--ac-qua-light-rgb),var(--ac-bg-opacity))!important
+}
+
+.ac-bg-quaternary-dark {
+    --ac-bg-opacity:1;
+    background-color:rgba(var(--ac-qua-dark-rgb),var(--ac-bg-opacity))!important
+}
+
+.ac-text-primary {
+    --ac-text-opacity:1;
+    color:rgba(var(--ac-primary-rgb),var(--ac-text-opacity))!important
+}
+
+.ac-text-secondary {
+    --ac-text-opacity:1;
+    color:rgba(var(--ac-secondary-rgb),var(--ac-text-opacity))!important
+}
+
+.ac-text-tertiary {
+    --ac-text-opacity:1;
+    color:rgba(var(--ac-tertiary-rgb),var(--ac-text-opacity))!important
+}
+
+.ac-text-quaternary {
+    --ac-text-opacity:1;
+    color:rgba(var(--ac-quaternary-rgb),var(--ac-text-opacity))!important
+}
+
+.ac-text-primary-light {
+    --ac-text-opacity:1;
+    color:rgba(var(--ac-pri-light-rgb),var(--ac-text-opacity))!important
+}
+
+.ac-text-primary-dark {
+    --ac-text-opacity:1;
+    color:rgba(var(--ac-pri-dark-rgb),var(--ac-text-opacity))!important
+}
+
+.ac-text-secondary-light {
+    --ac-text-opacity:1;
+    color:rgba(var(--ac-sec-light-rgb),var(--ac-text-opacity))!important
+}
+
+.ac-text-secondary-dark {
+    --ac-text-opacity:1;
+    color:rgba(var(--ac-sec-dark-rgb),var(--ac-text-opacity))!important
+}
+
+.ac-text-tertiary-light {
+    --ac-text-opacity:1;
+    color:rgba(var(--ac-ter-light-rgb),var(--ac-text-opacity))!important
+}
+
+.ac-text-tertiary-dark {
+    --ac-text-opacity:1;
+    color:rgba(var(--ac-ter-dark-rgb),var(--ac-bg-opacity))!important
+}
+
+.ac-text-quaternary-light {
+    --ac-text-opacity:1;
+    color:rgba(var(--ac-qua-light-rgb),var(--ac-text-opacity))!important
+}
+
+.ac-text-quaternary-dark {
+    --ac-text-opacity:1;
+    color:rgba(var(--ac-qua-dark-rgb),var(--ac-text-opacity))!important
+}
+/*
+.nav-pills .nav-link {
+    --ac-bg-opacity:1;
+    --ac-text-opacity:1;
+    background-color:rgba(var(--ac-sec-dark-rgb),var(--ac-bg-opacity))!important;
+    color: rgba(var(--ac-tertiary-rgb),var(--ac-text-opacity))!important;
+}*/
