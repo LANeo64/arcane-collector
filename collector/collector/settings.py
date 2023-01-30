@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'simple_history',
+    'polymorphic',
     'collection.apps.CollectionConfig',
     'inventory.apps.InventoryConfig',
 ]
