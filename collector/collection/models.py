@@ -9,7 +9,7 @@ def get_foster_collector():
     return get_user_model().objects.get_or_create(username='taneleer-tivan')[0]
 
 class Collection(models.Model):
-    display_name = models.CharField(max_length=200)
+    display_name = models.CharField(max_length=200, default='Collection')
     slug = models.CharField(max_length=200, unique=True)
     description = models.TextField(default='')
     creator = models.CharField(max_length=200, default='')
