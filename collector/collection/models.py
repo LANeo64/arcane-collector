@@ -59,7 +59,12 @@ class Universum(models.Model):
         related_name='universums'
     )
     homepage = models.URLField()
-    icon = models.ImageField(upload_to='universum_icons', height_field=100, width_field=100)
+    icon = models.ImageField(
+        upload_to='universum_icons',
+        height_field='icon_height',
+        width_field='icon_width')
+    icon_height = models.PositiveSmallIntegerField(default=15)
+    icon_width = models.PositiveSmallIntegerField(default=15)
 
     def __str__(self) -> str:
         return self.display_name
@@ -97,7 +102,13 @@ class Collection(models.Model):
         default=get_foster_collector
     )
     homepage = models.URLField()
-    icon = models.ImageField(upload_to='collection_icons', height_field=100, width_field=100)
+    icon = models.ImageField(
+        upload_to='collection_icons',
+        height_field='icon_height',
+        width_field='icon_width'
+    )
+    icon_height = models.PositiveSmallIntegerField(default=15)
+    icon_width = models.PositiveSmallIntegerField(default=15)
     history = HistoricalRecords()
 
     def __str__(self) -> str:
