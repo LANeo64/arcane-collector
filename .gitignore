@@ -133,3 +133,6 @@ dmypy.json
 *.pot
 *.pyc
 __pycache__
+
+# Project specific
+collector/media
