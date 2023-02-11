@@ -1,6 +1,16 @@
 from django.contrib import admin
 
-from .models import Collection
+from collection import models
 
 # Register your models here.
-admin.site.register(Collection)
+collection_models = [
+    models.Collection,
+    models.Collectible,
+    models.Universum,
+    models.UniversumCategory,
+    models.UniversumType,
+    models.CreatorPerson,
+    models.CreatorCompany
+]
+
+admin.site.register(collection_models)
