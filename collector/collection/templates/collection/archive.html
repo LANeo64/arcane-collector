@@ -1,0 +1,25 @@
+<!-- templates/collection/collection.html -->
+{% extends 'base.html' %}
+
+{% block title %}Collection archive - {% endblock title %}
+
+{% block app_nav %}
+    {% include 'collection/menu.html' %}
+{% endblock app_nav %}
+
+{% block content %}
+    <h1>Collections archive</h1>
+    {% if collections %}
+        <table>
+        {% for collection in collections %}
+            <tr>
+                <td>{{collection.display_name}}</td>
+            </tr>
+        {% endfor %}
+        </table>
+    {% else %}
+        <p>Something went wrong.</p>
+    {% endif %}
+
+
+{% endblock content %}
